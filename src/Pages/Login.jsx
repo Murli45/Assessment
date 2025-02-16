@@ -22,7 +22,7 @@ export default function Login() {
     // Dummy authentication logic
     if (email === "test@example.com" && password === "password") {
       // Redirect to main dashboard page
-      // navigate('/dashboard');
+       navigate('/dashboard');
     } else {
       alert("Invalid email or password");
     }
