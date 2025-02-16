@@ -1,0 +1,219 @@
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    font-size: 1.5rem;
+    color: #d8000c;
+    background-color: #ffbaba;
+    border: 1px solid #d8000c;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 20px 0;
+  }
+
+.container {
+    padding: 20px;
+}
+
+.headerRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.filters input,
+.filters select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    flex: 1;
+    min-width: 200px; /* Ensure inputs don't get too small */
+}
+
+.filters .reset-button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid #f01c1c;
+    background-color: #f9dede;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filters .reset-button:hover {
+    background-color: #f01c1c;
+    color: white;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: gainsboro;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.2s;
+    flex: 1 1 calc(33.333% - 20px); /* Adjust the width as needed */
+    box-sizing: border-box;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensure the image covers the area while maintaining aspect ratio */
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card p {
+    margin: 5px 0;
+}
+
+.card .author {
+    font-weight: bold;
+    color: #555;
+}
+
+.card .date {
+    color: #888;
+}
+
+.card .type {
+    color: #888;
+    font-style: italic;
+}
+
+.card a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .filters {
+        flex-direction: column;
+    }
+
+    .card {
+        flex: 1 1 100%;
+    }
+}
+
+/* Medium devices (tablets, 768px and down) */
+@media (max-width: 768px) {
+    .filters {
+        flex-direction: column;
+    }
+
+    .card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and down) */
+@media (max-width: 992px) {
+    .card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and down) */
+@media (max-width: 1200px) {
+    .card {
+        flex: 1 1 calc(33.333% - 20px);
+    }
+}
+  
+  /* Dark mode styles */
+  .dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  .dark-mode .card {
+    border: 1px solid #333;
+    background-color: #1e1e1e;
+  }
+
+  .toggle-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .toggle-button.light-mode {
+    background-color: #61dafb;
+    color: white;
+  }
+  
+  .toggle-button.light-mode:hover {
+    background-color: #0056b3;
+  }
+  
+  .toggle-button.dark-mode {
+    background-color: #333;
+    color: #e0e0e0;
+  }
+  
+  .toggle-button.dark-mode:hover {
+    background-color: #555;
+  }
+  
+  .dark-mode .filters input,
+  .dark-mode .filters button {
+    background-color: #333;
+    color: #e0e0e0;
+    border: 1px solid #555;
+  }
+  
+  .dark-mode .reset-button {
+    background-color: #0056b3;
+  }
+  
+  .dark-mode .reset-button:hover {
+    background-color: #003f7f;
+  }
+  
+  .dark-mode .card a {
+    color: #bb86fc;
+  }
+  
+  .dark-mode .card a:hover {
+    text-decoration: underline;
+  }

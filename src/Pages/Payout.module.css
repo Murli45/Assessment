@@ -1,0 +1,130 @@
+.container {
+    padding: 20px;
+  }
+  
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.5rem;
+    color: #333;
+  }
+
+  .error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    font-size: 1.5rem;
+    color: #d8000c;
+    background-color: #ffbaba;
+    border: 1px solid #d8000c;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 20px 0;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .table th,
+  .table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .table th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .table input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .table input:focus {
+    border-color: #61dafb;
+    outline: none;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .pageItem {
+    margin: 0 5px;
+  }
+  
+  .pageLink {
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    color: #61dafb;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  
+  .pageLink:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .active {
+    background-color: #61dafb;
+    color: black;
+    border-color: #61dafb;
+  }
+
+
+  .headerRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .exportButtons {
+    display: flex;
+  }
+  
+  .exportButtons button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: lightslategrey;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .exportButtons button:hover {
+    background-color: #0056b3;
+  }
